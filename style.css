@@ -151,13 +151,21 @@ a{text-decoration:none;color:#333;font-weight:500;}
   flex-direction: column;
   gap: 15px;
 }
-
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 .tour-images img {
   width: 280px;
   border-radius: 12px;
   object-fit: cover;
 }
-
+.swiper-slide img {
+  width: 280px;
+  border-radius: 12px;
+  object-fit: cover;
+}
 
 
 .tour-text h1 {
