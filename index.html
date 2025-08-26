@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,36 +9,55 @@
 <body>
 
 <header class="navbar">
-  <div class="container">
+  <div class="container-fluid p-0">
     <h1 class="logo">Hepta</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Hotels</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+  <div class="hero">
+    <div>
+      <h1>Travel & Tours</h1>
+      <p>Welcome to tours and travel website</p>
+      <button onclick="btn">VISIT COLORLIB</button> 
+       <!-- <a href="#" class="btn"></a> -->
+    </div>
+    <div class="menu-btn" onclick="openNav()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="/hepta-websites/">Home</a>
+      <a href="/hotels">Hotels</a>
+      <a href="/airlines">About Us</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="#">News</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+  </script>
+
   </div>
 </header>
 
-<section class="hero">
-  <div class="hero-text">
-    <h2>Travel & Tours</h2>
-    <p>Welcome To Our Website</p>
-    <a href="index.html" class="btn">VISIT COLORLIB</a>
-  </div>
-</section>
+
 <section class="welcome">
   <div class="welcome-container">
-    <!-- Left side image -->
+    
     <div class="welcome-image">
       <img src="women.jpg" alt="Welcome Image">
     </div>
 
-    <!-- Right side content -->
+    
     <div class="welcome-text">
       <h2>Welcome To Our Website</h2>
       <p>
@@ -107,23 +125,48 @@
         the Semantics, a large language ocean.
       </p>
     </div>
-  <div class="tour-container">
+  
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-   
-        <div class="tour-images">
-          <img src="c73aa688-11ea-40e7-a5c8-e307f01b5735.jpg" alt="Tour 1">
-        </div>
-        <div class="swiper-slide">
-          <img src="Credit to thailand_adel on tiktok_ Pi Leh Lagoon….jpg" alt="Tour 2">
-        </div>
-        <div class="swiper-slide">
-          <img src="e3027749-36a0-418f-891a-4cb730e2160e.jpg" alt="Tour 3">
-        </div>
+<div id="tourCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    
+    <div class="carousel-item active text-center">
+      <img src="c73aa688-11ea-40e7-a5c8-e307f01b5735.jpg" class="d-block mx-auto" alt="Tour 1" style="max-height:500px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Petra, Jordan</h5>
       </div>
+    </div>
 
     
+    <div class="carousel-item text-center">
+      <img src="surfer.jpg" class="d-block mx-auto" alt="Tour 2" style="max-height:500px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Thailand Beaches</h5>
+      </div>
+    </div>
 
+    
+    <div class="carousel-item text-center">
+      <img src="e3027749-36a0-418f-891a-4cb730e2160e.jpg" class="d-block mx-auto" alt="Tour 3" style="max-height:500px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Alps, Italy</h5>
+      </div>
+    </div>
   </div>
+
+  
+  <button class="carousel-control-prev" type="button" data-bs-target="#tourCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#tourCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </section>
 
   <section class="blog-section">
@@ -148,7 +191,7 @@
         </div>
       </div>
 
-      <!-- Card 2 -->
+      
       <div class="blog-card">
         <img src="surfer.jpg" alt="Beach">
         <div class="blog-content">
@@ -161,7 +204,7 @@
         </div>
       </div>
 
-      <!-- Card 3 -->
+      
       <div class="blog-card">
         <img src="sofa.jpg" alt="Living Room">
         <div class="blog-content">

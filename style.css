@@ -4,24 +4,115 @@ body{font-family:Arial, sans-serif;line-height:1.6}
 .container
 {max-width:1200px;margin:0 auto;padding:0 20px;}
 
+
 .navbar
 {background:#fff;position:sticky;top:0;z-index:100;box-shadow:0 2px 4px rgba(0,0,0,.1)}
-.navbar 
-.container{display:flex;justify-content:space-between;align-items:center;}
-.navbar
- ul{display:flex;list-style:none}
-.navbar 
-li{margin-left:20px;}
-.navbar 
-a{text-decoration:none;color:#333;font-weight:500;}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
 
-.hero 
-    {height:90vh;background:url('building.jpg') no-repeat center/cover;
-        display:flex;align-items:center;
-        justify-content:center;text-align:center;
-        color:#fff;}
-.hero h2{font-size:3rem;}
-.hero p{font-size:1.3rem;margin:15px 0;color:#333;}
+    body, html {
+      height: 100%;
+      width: 100%;
+    }
+    
+
+  .hero {
+    background: url('building.jpg') no-repeat center center/cover;
+    background-size: cover;   
+    background-size: 100% auto; 
+    height: 100vh;            
+    width: 100%;             
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    color: white;
+  }
+    
+
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: bold;
+    }
+
+    .hero p {
+      margin: 20px 0;
+      font-size: 1.2rem;
+      color: #111;
+    }
+
+    .hero button {
+      padding: 10px 20px;
+      border: 2px solid white;
+      background: transparent;
+      color: white;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .menu-btn {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .menu-btn div {
+      width: 30px;
+      height: 3px;
+      background: white;
+      margin: 6px 0;
+    }
+
+    
+    .overlay {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: white;
+      overflow-x: hidden;
+      transition: 0.5s;
+      z-index: 999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .overlay-content {
+      text-align: center;
+    }
+
+    .overlay-content a {
+      display: block;
+      font-size: 2rem;
+      font-weight: bold;
+      margin: 20px 0;
+      color: black;
+      text-decoration: none;
+    }
+
+    .overlay-content a:first-child {
+      color: #47c5c2; /* Home highlight */
+    }
+
+    .overlay .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 3rem;
+      color: black;
+      cursor: pointer;
+    }
+
+
 .btn{display:inline-block;background:#f04;color:#fff;padding:10px 20px;border-radius:4px;text-decoration:none;}
 .features {
   padding: 60px 20px;
@@ -74,7 +165,7 @@ a{text-decoration:none;color:#333;font-weight:500;}
 }
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* always 3 columns */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 30px;
   max-width: 1100px;
   margin: 0 auto;
@@ -145,7 +236,7 @@ a{text-decoration:none;color:#333;font-weight:500;}
   margin: auto;
 }
 
-/* Left side images */
+
 .tour-images {
   display: flex;
   flex-direction: column;
@@ -181,41 +272,11 @@ a{text-decoration:none;color:#333;font-weight:500;}
   text-align: center;
   margin: auto;
  }
-/* .tour-images {
-  position: relative;
-  width: 280px;
-  height: 200px; /* fixed height */
-  /* overflow: hidden;
-} */ */ */
 
-/* .tour-images img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 12px;
-  object-fit: cover;
-  opacity: 0;
-  animation: slideShow 12s infinite;
-} */
-
-/* First image */
-.tour-images img:nth-child(1) {
-  animation-delay: 0s;
-}
-/* Second image */
-.tour-images img:nth-child(2) {
-    width: 50px;
-  height: 50px;
-  animation-delay: 4s;
-}
-/* Third image */
-.tour-images img:nth-child(3) {
-  animation-delay: 8s;
-}
 body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #5dc3b8; /* screenshot background color */
+      background: #5dc3b8; 
     }
 
     .blog-section {
@@ -496,3 +557,24 @@ body {
     .social-icons a:hover {
       color: #fff;
     }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: rgba(0,0,0,0.5);
+      border-radius: 50%;
+      padding: 20px;
+    }
+.btn {
+  background-color:white;   
+  box-sizing: content-box;
+  color: white;              
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease; 
+}
+
+.btn:hover {
+  background-color: white;   
+  color: white;              
+  border: 2px solid green;   
+}
