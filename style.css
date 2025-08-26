@@ -578,3 +578,20 @@ body {
   color: white;              
   border: 2px solid green;   
 }
+html {
+  scroll-behavior: smooth;
+}
+.welcome {
+  animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
