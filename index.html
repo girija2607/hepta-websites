@@ -3,27 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hepta Travel</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <!-- Font Awesome 4.7.0 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Or Latest Font Awesome 6 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+
+<style>
+  .title {
+    font-family: 'Merriweather', serif;
+    font-weight: 700; /* Bold */
+  }
+</style>
+
+<link rel="stylesheet" href="style.css">
+<script src="js/main.js"></script>
+
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Hepta</div>
+    <span class="menu-toggle" onclick="openNav()">☰</span>
+  </header>
+
+  <!-- Overlay Menu -->
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="#">Home</a>
+      <a href="#">Hotels</a>
+      <a href="#">About Us</a>
+      <a href="#">Gallery</a>
+      <a href="#">News</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Travel & Tours</h1>
+      <p>A free template by Colorlib. Download and share!</p>
+      <a href="#" class="btn">VISIT COLORLIB</a>
+    </div>
+  </section>
+
+  <!-- JavaScript -->
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+  </script>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hepta Clone</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="navbar">
   <div class="container-fluid p-0">
     <h1 class="logo">Hepta</h1>
-  <div class="hero">
+  <div class="hero"> 
     <div>
       <h1>Travel & Tours</h1>
       <p>Welcome to tours and travel website</p>
       <button onclick="btn">VISIT COLORLIB</button> 
        <!-- <a href="#" class="btn"></a> -->
-    </div>
+     <!-- </div>
     <div class="menu-btn" onclick="openNav()">
       <div></div>
       <div></div>
       <div></div>
     </div>
-  </div>
+  </div> 
   <div id="myNav" class="overlay">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <div class="overlay-content">
@@ -46,16 +122,37 @@
     }
   </script>
 
-  </div>
-</header>
+  </div> -->
+<!-- </header> -->
+       <section class="section" id="next-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4" data-aos="fade-up">
+            <p><img src="hero_2.jpg" alt="Free Template by Free-Template.co" class="img-fluid"></p>
+          </div>
+          <div class="col-lg-6 pl-lg-5" data-aos="fade-up">
+            <h2 class="mb-4"><b>Welcome To Our Website</b></h2>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. </p>
+     <p class="pt-4">
+       <a href="https://vimeo.com/channels/staffpicks/93951774" data-fancybox class="btn-play">
+          <span class="icon mr-2"><span class="fa fa-play"></span></span>
+           <span class="text">WATCH THE VIDEO</span>
+        </a>
+     </p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
-<section class="welcome">
+<!-- <section class="welcome">
   <div class="welcome-container">
     
     <div class="welcome-image">
       
-      <img src="women.jpg" alt="Welcome Image">
+      <img src="hero_2.jpg" alt="Welcome Image">
     </div>
 
     
@@ -70,49 +167,50 @@
         A small river named Duden flows by their place and supplies it with the necessary regelialia.
       </p>
       <button>WATCH THE VIDEO</button>
-      <!-- <a href="#" class="btn">WATCH THE VIDEO</a> -->
-    </div>
+      <a href="#" class="btn">WATCH THE VIDEO</a> -->
+    <!-- </div>
   </div>
-</section>
+</section>  -->
 <section class="features">
   <div class="container">
-    <h2 class="section-title">Experience Once In Your Life Time</h2>
-    <p class="section-subtitle">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...</p>
+    <h1 class="section-title" data-aos="fade-up" ><b>Experience Once In Your Life Time</b></h1>
+    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
 
     <div class="features-grid">
-      <div class="feature-item">
-        <img src="food.jpg" alt="food">
-        <h3>Good Foods</h3>
+      
+       <div class="feature-item">
+        <img src="breakfast.svg" alt="food">
+        <h3><b>Good Foods</b></h3>
         <p>Enjoy delicious and traditional meals wherever you travel.</p>
-      </div>
-
+       </div>
+      
       <div class="feature-item">
-        <img src="travel.jpg" alt="travel">
-        <h3>Travel Anywhere</h3>
+        <img src="planet.svg" alt="travel">
+        <h3><b>Travel Anywhere</b></h3>
         <p>We help you explore the world with confidence.</p>
       </div>
 
       <div class="feature-item">
-        <img src="airlines.jpg" alt="plane">
-        <h3>Airplane</h3>
+        <img src="airplane.svg" alt="plane">
+        <h3><b>Airplane</b></h3>
         <p>Fly comfortably and reach your destinations faster.</p>
       </div>
 
       <div class="feature-item">
-        <img src="https://img.icons8.com/ios-filled/50/000000/beach.png" alt="beach">
-        <h3>Beach Resort</h3>
+        <img src="beach.svg" alt="beach">
+        <h3><b>Beach Resort</b></h3>
         <p>Relax in luxury beachside resorts with amazing views.</p>
       </div>
 
       <div class="feature-item">
-        <img src="https://img.icons8.com/ios-filled/50/000000/mountain.png" alt="mountain">
-        <h3>Mountain Climbing</h3>
+        <img src="mountains.svg" alt="mountain">
+        <h3><b>Mountain Climbing</b></h3>
         <p>Adventure seekers can climb majestic peaks with us.</p>
       </div>
 
       <div class="feature-item">
-        <img src="https://img.icons8.com/ios-filled/50/000000/hot-air-balloon.png" alt="balloon">
-        <h3>Hot Air Balloon</h3>
+        <img src="balloon.svg" alt="balloon">
+        <h3><b>Hot Air Balloon</b></h3>
         <p>See the world from above in a colorful hot air balloon.</p>
       </div>
     </div>
@@ -134,7 +232,7 @@
   <div class="carousel-inner">
     
     <div class="carousel-item active text-center">
-      <img src="c73aa688-11ea-40e7-a5c8-e307f01b5735.jpg" class="d-block mx-auto" alt="Tour 1" style="max-height:500px;">
+      <img src="womengo.jpg" class="d-block mx-auto" alt="Tour 1" style="max-height:500px;">
       <div class="carousel-caption d-none d-md-block">
         <!-- <h5>Petra, Jordan</h5> -->
       </div>
@@ -142,7 +240,7 @@
 
     
     <div class="carousel-item text-center">
-      <img src="surfer.jpg" class="d-block mx-auto" alt="Tour 2" style="max-height:500px;">
+      <img src="womenbeach.jpg" class="d-block mx-auto" alt="Tour 2" style="max-height:500px;">
       <div class="carousel-caption d-none d-md-block">
         <!-- <h5>Thailand Beaches</h5> -->
       </div>
@@ -150,7 +248,7 @@
 
     
     <div class="carousel-item text-center">
-      <img src="e3027749-36a0-418f-891a-4cb730e2160e.jpg" class="d-block mx-auto" alt="Tour 3" style="max-height:500px;">
+      <img src="slide.jpg" class="d-block mx-auto" alt="Tour 3" style="max-height:500px;">
       <div class="carousel-caption d-none d-md-block">
         <!-- <h5>Alps, Italy</h5> -->
       </div>
@@ -182,7 +280,7 @@
     <div class="blog-container">
       
       <div class="blog-card">
-        <img src="juice.jpg" alt="Drinks">
+        <img src="cooldrink.jpg" alt="Drinks">
         <div class="blog-content">
           <small>February 26, 2025</small>
           <h3>45 Best Places To Unwind</h3>
@@ -195,7 +293,7 @@
 
       
       <div class="blog-card">
-        <img src="surfer.jpg" alt="Beach">
+        <img src="slide.jpg" alt="Beach">
         <div class="blog-content">
           <small>February 26, 2025</small>
           <h3>45 Best Places To Unwind</h3>
@@ -208,7 +306,7 @@
 
       
       <div class="blog-card">
-        <img src="hotelrooms.jpg" alt="Living Room">
+        <img src="img_4.jpg" alt="Living Room">
         <div class="blog-content">
           <small>February 26, 2025</small>
           <h3>45 Best Places To Unwind</h3>
@@ -226,7 +324,7 @@
 
       
       <div class="testimonial-card">
-        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Clare Gupta">
+        <img src="person_1.jpg" alt="Clare Gupta">
         <p>
           “Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, 
           there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the 
@@ -237,7 +335,7 @@
 
       
       <div class="testimonial-card">
-        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rogie Slater">
+        <img src="person_2.jpg" alt="Rogie Slater">
         <p>
           “Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, 
           there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the 
@@ -248,7 +346,7 @@
 
       
       <div class="testimonial-card">
-        <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="John Doe">
+        <img src="person_3.jpg" alt="John Doe">
         <p>
           “Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, 
           there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the 
@@ -272,14 +370,14 @@
 
     
       <div class="destination-card">
-        <img src="juice.jpg" alt="Food & Wines">
+        <img src="cooldrink.jpg" alt="Food & Wines">
         <h3>Food & Wines</h3>
         <span class="stars">★★★★☆</span>
         <span class="reviews">3,239 reviews</span>
       </div>
       
       <div class="destination-card">
-        <img src="Surfering.jpg" alt="Resort & Spa">
+        <img src="slide.jpg" alt="Resort & Spa">
         <h3>Resort & Spa</h3>
         <span class="stars">★★★★☆</span>
         <span class="reviews">4,921 reviews</span>
@@ -287,7 +385,7 @@
 
       
       <div class="destination-card">
-        <img src="resort.jpg" alt="Hotel Rooms">
+        <img src="img_4.jpg" alt="Hotel Rooms">
         <h3>Hotel Rooms</h3>
         <span class="stars">★★★★★</span>
         <span class="reviews">2,112 reviews</span>
@@ -295,7 +393,7 @@
 
       
       <div class="destination-card">
-        <img src="climbing.jpg" alt="Mountain Climbing">
+        <img src="img_5.jpg" alt="Mountain Climbing">
         <h3>Mountain Climbing</h3>
         <span class="stars">★★★★☆</span>
         <span class="reviews">6,421 reviews</span>
@@ -352,13 +450,29 @@
 
     <div class="footer-bottom">
       <p>Copyright © 2025 All rights reserved | This template is made with  by Colorlib</p>
-      <div class="social-icons">
+      <p class="col-md-12 social">
+  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+</p>
+
+       <!-- <p class="col-md-12 social">
+            <a href="#"><span class="fa fa-facebook"></span></a>
+            <a href="#"><span class="fa fa-twitter"></span></a>
+            <a href="#"><span class="fa fa-instagram"></span></a>
+            <a href="#"><span class="fa fa-linkedin"></span></a>
+            <a href="#"><span class="fa fa-youtube"></span></a>
+            
+          </p> -->
+      <!-- <div class="social-icons">
         <a href="#">Facebook</a>
         <a href="#">Twitter</a>
         <a href="#">Instagram</a>
         <a href="#">LinkedIn</a>
         <a href="#">YouTube</a>
-      </div>
+      </div> -->
     </div>
   </footer>
   </body>
